@@ -7,7 +7,7 @@ autoclick = 0
 
 function autoclicker() {
 	money += autoclick
-	$('.money__num').text(money)
+	reset_money()
 }
 setInterval(autoclicker, 1000);
 
@@ -15,7 +15,7 @@ function auto(){
 	if(money>=10){
 		autoclick += 1
 		money -= 10
-		$('.money__num').text(money)
+		reset_money()
 	}else{
 		alert("Денег недостачно")
 	}
@@ -30,7 +30,7 @@ levels={
 $('.personage').on('click',function(){
 	money += price_click
 	progress += 1
-	$('.money__num').text(money)
+	reset_money()
 	if(progress == levels[level]["click"]){
 		level += 1
 		progress = 0
@@ -40,11 +40,18 @@ $('.personage').on('click',function(){
 	$('.level__progress').css({"width":progress/10*100+"%"})
 })
 
+function reset_money(){
+if(money>=1000 && money < 1000000){
+	$('.money__num').text(Math.floor(money / 1000)+' тыс.' )
+}
+}
+
+
 function money_plus_1(){
 	if(money>=100){
 	price_click += 1
 	money -= 100
-	$('.money__num').text(money)
+	reset_money()
 	}else{
 		alert("Денег недостачно")
 	}
@@ -54,7 +61,7 @@ function money_x_2(){
 	if(money>=200){
 	price_click *= 2
 	money -= 200
-	$('.money__num').text(money)
+	reset_money()
 	}else{
 		alert("Денег недостачно")
 	}
