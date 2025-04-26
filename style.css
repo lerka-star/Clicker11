@@ -1,0 +1,39 @@
+body{
+	display: grid;
+	background-image: url('img/back.webp'); 
+	grid-template-columns: 3fr 2fr;
+	background-size: cover;
+}
+.shop{
+	background: #00000080;
+}
+.personage{
+	width: 600px;
+}
+.money{
+	display: flex;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+.money img{
+	height: 36px;
+}
+.level{
+	position:relative;
+	border-radius: 20px;
+	height: 40px;
+	width: 320px;
+	margin: 20px auto; 
+	border: 2px solid #000000;
+}
+.level__name{
+	font-size: 36px;
+	color: #FFFFFF;
+	position: absolute;
+	top: -32px;
+}
+.level__progress{
+	width:50%;
+	height: 100%;
+	background: #FF0000;
+}
