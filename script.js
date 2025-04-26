@@ -1,5 +1,5 @@
 //создаем переменную для денег
-money = 0
+money = 1000000
 progress = 0
 level = 1
 price_click = 1
@@ -47,7 +47,14 @@ function reset_money(){
 	if(money>=1000 && money < 1000000) {
 		$('.money__num').text( Math.floor(money / 1000)+' тыс.' )
 	}
+	if(money>=1000000 && money < 1000000000) {
+		$('.money__num').text( Math.floor(money / 1000000)+' млн.' )
+	}
+	if(money>=100000000 && money < 10000000000) {
+		$('.money__num').text( Math.floor(money / 1000000000)+' млрд.' )
+	}
 }
+
 
 
 function money_plus_1(){
