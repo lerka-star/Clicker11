@@ -1,5 +1,5 @@
 //создаем переменную для денег
-money = 1000000
+money = 0
 progress = 0
 level = 1
 price_click = 1
