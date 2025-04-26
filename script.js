@@ -21,9 +21,10 @@ function auto(){
 	}
 }	
 levels={
-	1:{"click":10, "img":"img/001.png"},
-	2:{"click":20, "img":"img/002.png"},
-	3:{"click":30, "img":"img/003.png"},
+	1:{"click":100, "img":"img/001.png"},
+	2:{"click":2000, "img":"img/002.png"},
+	3:{"click":3000, "img":"img/003.png"},
+	4:{"click":40000, "img":"img/004.png"},
 }
 
 $('.personage').on('click',function(){
