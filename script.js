@@ -37,7 +37,7 @@ $('.personage').on('click',function(){
 		$('.level__name').text("Уровень "+level)
 		$('.personage').attr("src", levels[level]["img"])
 	}
-	$('.level__progress').css({"width":progress/10*100+"%"})
+	$('.level__progress').css({"width":progress/levels[level]["click"]*100+"%"})
 })
 
 function reset_money(){
