@@ -44,8 +44,8 @@ function reset_money(){
 	if (money<1000){
 		$('.money__num').text( money)
 	}
-	if(money>=1000 && money < 1000000){
-		$('.money__num').text(Math.floor(money / 1000)+' тыс.' )
+	if(money>=1000 && money < 1000000) {
+		$('.money__num').text( Math.floor(money / 1000)+' тыс.' )
 	}
 }
 
