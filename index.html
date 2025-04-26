@@ -25,13 +25,24 @@
 		<div class="shop">
 			<div class="shop__title">Кибер-маркет</div>
 			<div class="product">
-				<div class="product__item" data-price="100">
-					<div class="product__title"></div>
+				<div class="product__item" data-price="100" onclick="money_plus_1()">
+					<div class="product__title">+1 монета за клик</div>
+					<div class="product_description">увеличение награды за каждый клик на 1 монету</div>
 					<div class="product__price">100К</div>
 				</div>
+				
+				<div class="product__item" data-price="10" onclick="auto()">
+					<div class="product__title">автоклик</div>
+					<div class="product_description">+1 монета в секунду</div>
+					<div class="product__price">10К</div>
+				</div>
+				<div class="product__item" data-price="200" onclick="money_x_2()">
+					<div class="product__title">x2 монет за клик</div>
+					<div class="product_description">увеличение награды за каждый клик в 2 раза</div>
+					<div class="product__price">200К</div>
 			</div>
 		</div>
-		
+	</div>	
 		<script src="script.js"></script>
 	</body>
 </html>
